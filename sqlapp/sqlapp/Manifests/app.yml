@@ -12,8 +12,8 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: localregistry1000.azurecr.io/sqlappdocker:latest
-        name: myapp
-        ports:
-        - containerPort: 80
-          name: myapp        
+        - image: publiccloudacr.azurecr.io/sqlappdocker:latest
+          name: myapp
+          ports:
+            - containerPort: 80
+              name: myapp
